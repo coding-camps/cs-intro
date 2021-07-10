@@ -82,5 +82,61 @@
                 Console.WriteLine($"输入的年龄是{age}，他/她不是成年人。");
             }
         }
+
+        public void eg04()
+        {
+            // 示例4：重构示例03，演示方法的使用
+            // 整型   年龄
+            int age = 0;
+            // 用户输入年龄
+            Console.Write("请输入一个年龄：");
+            string ageStr = Console.ReadLine() ?? "0";
+            age = int.Parse(ageStr);
+
+            // 判断年龄是否在有效范围
+            bool isValid = eg04_checkAgeValidation(age);
+            if (!isValid)
+            {
+                return;
+            }
+
+            // 根据年龄判断是否成年人
+            eg04_checkAgeAdult(age);
+        }
+
+        private bool eg04_checkAgeValidation(int age)
+        {
+            // 判断年龄是否在有效范围
+            bool isValid = false;
+            if (age <= 0)
+            {
+                Console.WriteLine("太小");
+            }
+            else if (age > 200)
+            {
+                Console.WriteLine("太大");
+            }
+            else
+            {
+                Console.WriteLine("输入的年龄是" + age + ", 有效。");
+                isValid = true;
+            }
+
+            return isValid;
+        }
+
+        private void eg04_checkAgeAdult(int age)
+        {
+            // 根据判断输出是否成年人
+            if (age >= 18)
+            {
+                // 这里以$符号开始的字符串称为 内插字符串。
+                Console.WriteLine($"输入的年龄是{age}，他/她是成年人。");
+            }
+            else
+            {
+                Console.WriteLine($"输入的年龄是{age}，他/她不是成年人。");
+            }
+        }
     }
 }
