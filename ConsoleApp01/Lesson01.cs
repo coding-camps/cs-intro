@@ -138,5 +138,19 @@
                 Console.WriteLine($"输入的年龄是{age}，他/她不是成年人。");
             }
         }
+
+        public void eg05()
+        {
+            // 示例5：for循环，打印乘法口诀表（数字版）
+            for (int i = 1; i < 10; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write($"{j} x {i} = {i * j}\t");
+                }
+
+                Console.WriteLine();
+            }
+        }
     }
 }
