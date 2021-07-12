@@ -152,5 +152,35 @@
                 Console.WriteLine();
             }
         }
+
+        public void eg06()
+        {
+            // 示例6：for循环，求1~100的和
+
+            // 方式1
+            int sum = 0;
+            for (int i = 0; i <= 100; i++)
+            {
+                sum = sum + i;
+            }
+
+            Console.WriteLine("sum(1,100) = " + sum);
+
+            // 方式2
+            sum = 0;
+            int j = 0;
+            for (;;)
+            {
+                j = j + 1;
+                if (j > 100)
+                {
+                    break;
+                }
+
+                sum += j;
+            }
+
+            Console.WriteLine($"sum(1,100) = {sum}");
+        }
     }
 }
