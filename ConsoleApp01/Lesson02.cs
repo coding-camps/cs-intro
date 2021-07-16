@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp01
+﻿using ConsoleApp01_MyLib;
+
+namespace ConsoleApp01
 {
     internal class Eg07Student
     {
@@ -36,6 +38,19 @@
             for (int i = 0; i < students.Count; i++)
             {
                 students[i].ShowInfo();
+            }
+        }
+
+        public void eg08()
+        {
+            // 示例08：面向对象，通过类库代码抽离
+            List<Student> students = new List<Student>();
+            students.Add(new Student("张三", 11, "初一"));
+            students.Add(new Student("李四", 11, "初二"));
+            students.Add(new Student("王五", 12, "初一"));
+            for (int i = 0; i < students.Count; i++)
+            {
+                Console.WriteLine(students[i].getInfo());
             }
         }
     }
