@@ -28,18 +28,31 @@ namespace WinFormsApp01
         /// </summary>
         private void InitializeComponent()
         {
+            btnTest01 = new Button();
             SuspendLayout();
+            // 
+            // btnTest01
+            // 
+            btnTest01.Location = new Point(43, 31);
+            btnTest01.Name = "btnTest01";
+            btnTest01.Size = new Size(229, 105);
+            btnTest01.TabIndex = 0;
+            btnTest01.Text = "btnTest01";
+            btnTest01.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1642, 929);
+            Controls.Add(btnTest01);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnTest01;
     }
 }
