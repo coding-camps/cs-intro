@@ -39,6 +39,7 @@ namespace WinFormsApp01
             btnTest01.TabIndex = 0;
             btnTest01.Text = "btnTest01";
             btnTest01.UseVisualStyleBackColor = true;
+            btnTest01.Click += btnTest01_Click;
             // 
             // Form1
             // 
