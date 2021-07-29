@@ -40,6 +40,8 @@ namespace WinFormsApp01
             btnTest01.Text = "btnTest01";
             btnTest01.UseVisualStyleBackColor = true;
             btnTest01.Click += btnTest01_Click;
+            btnTest01.MouseEnter += btnTest01_MouseEnter;
+            btnTest01.MouseLeave += btnTest01_MouseLeave;
             // 
             // Form1
             // 
