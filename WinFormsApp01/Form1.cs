@@ -5,6 +5,7 @@ namespace WinFormsApp01
         public Form1()
         {
             InitializeComponent();
+            initBtn1();
         }
 
         private void btnTest01_Click(object sender, EventArgs e)
@@ -23,6 +24,26 @@ namespace WinFormsApp01
         {
             // 鼠标离开按钮时，按钮文字内容恢复
             btnTest01.Text = "btnTest01";
+        }
+
+        // 新创建一个按钮 newBtn1
+        private Button newBtn1;
+
+        private void initBtn1()
+        {
+            // newBtn1 的创建过程
+            newBtn1 = new Button();
+            newBtn1.Text = "自创按钮1";
+            newBtn1.Location = new Point(300, 36);
+            newBtn1.Size = new Size(168, 98);
+            newBtn1.Click += newBtn1_Click;
+            Controls.Add(newBtn1);
+        }
+
+        private void newBtn1_Click(object sender, EventArgs e)
+        {
+            // newBtn1 的click事件
+            newBtn1.ForeColor = Color.CadetBlue;
         }
     }
 }
