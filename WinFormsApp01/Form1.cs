@@ -6,6 +6,7 @@ namespace WinFormsApp01
         {
             InitializeComponent();
             initBtn1();
+            initBtnList();
         }
 
         private void btnTest01_Click(object sender, EventArgs e)
@@ -44,6 +45,26 @@ namespace WinFormsApp01
         {
             // newBtn1 的click事件
             newBtn1.ForeColor = Color.CadetBlue;
+        }
+
+        private void initBtnList()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                Button btn = new Button();
+                btn.Text = $"按钮-{i + 1}";
+                btn.Location = new Point(30 + i * 200, 168);
+                btn.Size = new Size(168, 98);
+                btn.Click += btnList_Click;
+                Controls.Add(btn);
+            }
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            // Button btn = sender as Button; // 此行代码与下方代码相同
+            Button btn = (Button)sender;
+            btn.ForeColor = Color.HotPink;
         }
     }
 }
