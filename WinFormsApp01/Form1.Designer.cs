@@ -29,6 +29,13 @@ namespace WinFormsApp01
         private void InitializeComponent()
         {
             btnTest01 = new Button();
+            groupBox1 = new GroupBox();
+            buttonLogin = new Button();
+            textBoxPassword = new TextBox();
+            textBoxUsername = new TextBox();
+            labelPassword = new Label();
+            labelUsername = new Label();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // btnTest01
@@ -43,19 +50,90 @@ namespace WinFormsApp01
             btnTest01.MouseEnter += btnTest01_MouseEnter;
             btnTest01.MouseLeave += btnTest01_MouseLeave;
             // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.LightGreen;
+            groupBox1.Controls.Add(buttonLogin);
+            groupBox1.Controls.Add(textBoxPassword);
+            groupBox1.Controls.Add(textBoxUsername);
+            groupBox1.Controls.Add(labelPassword);
+            groupBox1.Controls.Add(labelUsername);
+            groupBox1.Font = new Font("Microsoft YaHei UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            groupBox1.Location = new Point(783, 180);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(665, 527);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "登录界面";
+            // 
+            // buttonLogin
+            // 
+            buttonLogin.Font = new Font("楷体", 12F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            buttonLogin.Location = new Point(248, 340);
+            buttonLogin.Name = "buttonLogin";
+            buttonLogin.Size = new Size(201, 83);
+            buttonLogin.TabIndex = 4;
+            buttonLogin.Text = "登录";
+            buttonLogin.UseVisualStyleBackColor = true;
+            // 
+            // textBoxPassword
+            // 
+            textBoxPassword.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            textBoxPassword.Location = new Point(286, 221);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.Size = new Size(200, 48);
+            textBoxPassword.TabIndex = 3;
+            // 
+            // textBoxUsername
+            // 
+            textBoxUsername.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            textBoxUsername.Location = new Point(286, 149);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.Size = new Size(200, 48);
+            textBoxUsername.TabIndex = 2;
+            // 
+            // labelPassword
+            // 
+            labelPassword.AutoSize = true;
+            labelPassword.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            labelPassword.Location = new Point(166, 221);
+            labelPassword.Name = "labelPassword";
+            labelPassword.Size = new Size(114, 41);
+            labelPassword.TabIndex = 1;
+            labelPassword.Text = "密码：";
+            // 
+            // labelUsername
+            // 
+            labelUsername.AutoSize = true;
+            labelUsername.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            labelUsername.Location = new Point(166, 152);
+            labelUsername.Name = "labelUsername";
+            labelUsername.Size = new Size(114, 41);
+            labelUsername.TabIndex = 0;
+            labelUsername.Text = "名称：";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1642, 929);
+            Controls.Add(groupBox1);
             Controls.Add(btnTest01);
             Name = "Form1";
             Text = "Form1";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button btnTest01;
+        private GroupBox groupBox1;
+        private Label labelUsername;
+        private Label labelPassword;
+        private TextBox textBoxPassword;
+        private TextBox textBoxUsername;
+        private Button buttonLogin;
     }
 }
