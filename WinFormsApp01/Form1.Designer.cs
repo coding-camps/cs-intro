@@ -52,7 +52,7 @@ namespace WinFormsApp01
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.LightGreen;
+            groupBox1.BackColor = Color.LightBlue;
             groupBox1.Controls.Add(buttonLogin);
             groupBox1.Controls.Add(textBoxPassword);
             groupBox1.Controls.Add(textBoxUsername);
@@ -75,12 +75,16 @@ namespace WinFormsApp01
             buttonLogin.TabIndex = 4;
             buttonLogin.Text = "登录";
             buttonLogin.UseVisualStyleBackColor = true;
+            buttonLogin.Click += buttonLogin_Click;
             // 
             // textBoxPassword
             // 
             textBoxPassword.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
             textBoxPassword.Location = new Point(286, 221);
+            textBoxPassword.MaxLength = 10;
             textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '*';
+            textBoxPassword.PlaceholderText = "输入密码";
             textBoxPassword.Size = new Size(200, 48);
             textBoxPassword.TabIndex = 3;
             // 
@@ -88,7 +92,9 @@ namespace WinFormsApp01
             // 
             textBoxUsername.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
             textBoxUsername.Location = new Point(286, 149);
+            textBoxUsername.MaxLength = 10;
             textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.PlaceholderText = "输入用户名";
             textBoxUsername.Size = new Size(200, 48);
             textBoxUsername.TabIndex = 2;
             // 

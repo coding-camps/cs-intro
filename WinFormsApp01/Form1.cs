@@ -66,5 +66,11 @@ namespace WinFormsApp01
             Button btn = (Button)sender;
             btn.ForeColor = Color.HotPink;
         }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            // 点击登录按钮
+            MessageBox.Show("点击了登录按钮");
+        }
     }
 }
