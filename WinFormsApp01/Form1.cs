@@ -70,7 +70,34 @@ namespace WinFormsApp01
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             // 点击登录按钮
-            MessageBox.Show("点击了登录按钮");
+
+            // 获取用户输入信息
+            String inputUsername = textBoxUsername.Text;
+            String inputPassword = textBoxPassword.Text;
+
+            // 验证用户输入信息
+            if (inputUsername == null || inputPassword == null)
+            {
+                MessageBox.Show("用户名或密码不能为空");
+                return;
+            }
+
+            if (inputUsername != "admin")
+            {
+                MessageBox.Show("用户名不存在！\n请重新输入。");
+                textBoxUsername.Text = "";
+                return;
+            }
+
+            if (inputPassword != "admin")
+            {
+                MessageBox.Show("密码错误！\n请重新输入。");
+                textBoxPassword.Text = "";
+                return;
+            }
+
+            // 登录成功
+            MessageBox.Show("登录成功！");
         }
     }
 }
