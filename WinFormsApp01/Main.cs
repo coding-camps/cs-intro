@@ -14,5 +14,10 @@ namespace WinFormsApp01
         {
             InitializeComponent();
         }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
