@@ -126,6 +126,7 @@ namespace WinFormsApp01
             Controls.Add(groupBox1);
             Controls.Add(btnTest01);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

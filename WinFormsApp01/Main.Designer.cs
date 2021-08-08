@@ -36,6 +36,7 @@ namespace WinFormsApp01
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Name = "Main";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Main";
             FormClosing += Main_FormClosing;
             ResumeLayout(false);
