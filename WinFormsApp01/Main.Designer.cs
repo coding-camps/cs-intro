@@ -28,20 +28,33 @@ namespace WinFormsApp01
         /// </summary>
         private void InitializeComponent()
         {
+            labelWelcome = new Label();
             SuspendLayout();
+            // 
+            // labelWelcome
+            // 
+            labelWelcome.AutoSize = true;
+            labelWelcome.Location = new Point(49, 56);
+            labelWelcome.Name = "labelWelcome";
+            labelWelcome.Size = new Size(0, 31);
+            labelWelcome.TabIndex = 0;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelWelcome);
             Name = "Main";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Main";
             FormClosing += Main_FormClosing;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label labelWelcome;
     }
 }
