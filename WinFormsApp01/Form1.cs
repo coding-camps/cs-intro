@@ -97,7 +97,7 @@ namespace WinFormsApp01
             }
 
             // 登录成功
-            Form mainForm = new Main();
+            Form mainForm = new Main(inputUsername);
             mainForm.Show();
             this.Hide();
         }

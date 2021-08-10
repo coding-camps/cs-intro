@@ -10,9 +10,15 @@ namespace WinFormsApp01
 {
     public partial class Main : Form
     {
-        public Main()
+        public Main(string name)
         {
             InitializeComponent();
+            showWelcomeInfo(name);
+        }
+
+        private void showWelcomeInfo(string name)
+        {
+            this.labelWelcome.Text = $"你好！欢迎{name}~!";
         }
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
