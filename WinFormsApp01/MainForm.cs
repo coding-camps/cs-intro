@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace WinFormsApp01
 {
-    public partial class Main : Form
+    public partial class MainForm : Form
     {
-        public Main(string name)
+        public MainForm(string name)
         {
             InitializeComponent();
             showWelcomeInfo(name);
