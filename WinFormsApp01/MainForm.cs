@@ -16,6 +16,18 @@ namespace WinFormsApp01
             showWelcomeInfo(name);
         }
 
+        public MainForm()
+        {
+            InitializeComponent();
+            showWelcomeInfo();
+        }
+
+        private void showWelcomeInfo()
+        {
+            string name = Constrants.INSTANCE.username;
+            this.labelWelcome.Text = $"你好！欢迎{name}~!";
+        }
+
         private void showWelcomeInfo(string name)
         {
             this.labelWelcome.Text = $"你好！欢迎{name}~!";
