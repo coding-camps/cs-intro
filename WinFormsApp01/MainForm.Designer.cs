@@ -39,15 +39,15 @@ namespace WinFormsApp01
             labelWelcome.Size = new Size(0, 31);
             labelWelcome.TabIndex = 0;
             // 
-            // Main
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(labelWelcome);
-            Name = "Main";
+            Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Main";
+            Text = "MainForm";
             FormClosing += Main_FormClosing;
             ResumeLayout(false);
             PerformLayout();
