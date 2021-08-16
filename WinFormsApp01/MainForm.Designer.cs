@@ -29,6 +29,7 @@ namespace WinFormsApp01
         private void InitializeComponent()
         {
             labelWelcome = new Label();
+            btnCaculate = new Button();
             SuspendLayout();
             // 
             // labelWelcome
@@ -39,11 +40,21 @@ namespace WinFormsApp01
             labelWelcome.Size = new Size(0, 31);
             labelWelcome.TabIndex = 0;
             // 
+            // btnCaculate
+            // 
+            btnCaculate.Location = new Point(313, 336);
+            btnCaculate.Name = "btnCaculate";
+            btnCaculate.Size = new Size(150, 46);
+            btnCaculate.TabIndex = 1;
+            btnCaculate.Text = "计算总价";
+            btnCaculate.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCaculate);
             Controls.Add(labelWelcome);
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
@@ -56,5 +67,6 @@ namespace WinFormsApp01
         #endregion
 
         private Label labelWelcome;
+        private Button btnCaculate;
     }
 }
