@@ -42,6 +42,7 @@ namespace WinFormsApp01
             // 
             // btnCaculate
             // 
+            btnCaculate.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
             btnCaculate.Location = new Point(313, 336);
             btnCaculate.Name = "btnCaculate";
             btnCaculate.Size = new Size(150, 46);
