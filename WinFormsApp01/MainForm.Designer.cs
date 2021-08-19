@@ -55,6 +55,7 @@ namespace WinFormsApp01
             btnCaculate.TabIndex = 1;
             btnCaculate.Text = "计算总价";
             btnCaculate.UseVisualStyleBackColor = true;
+            btnCaculate.Click += btnCaculate_Click;
             // 
             // labelPrice
             // 
